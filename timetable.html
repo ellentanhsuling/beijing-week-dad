@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beijing Week Timetable</title>
+<style>
+  :root { --navy:#1a365d; --blue:#2b6cb0; --bg:#f7fafc; --line:#e2e8f0; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; background:var(--bg); color:#1a202c; }
+  header { background:linear-gradient(145deg,#1a365d,#2b6cb0); color:#fff; padding:1.1rem; position:sticky; top:0; z-index:5; }
+  header a { color:#bee3f8; }
+  header h1 { margin:0; font-size:1.25rem; }
+  header p { margin:.35rem 0 0; opacity:.92; font-size:.9rem; }
+  .wrap { max-width:1100px; margin:0 auto; padding:1rem; }
+  .legend { display:flex; flex-wrap:wrap; gap:.5rem; margin:0 0 1rem; font-size:.85rem; }
+  .legend span { padding:.25rem .55rem; border-radius:999px; border:1px solid var(--line); background:#fff; }
+  .keep { background:#edf2f7 !important; }
+  .focus { background:#fef3c7 !important; font-weight:600; }
+  .sport { background:#c6f6d5 !important; }
+  .relax { background:#e9d8fd !important; }
+  .school { background:#bee3f8 !important; text-align:center; font-weight:700; color:var(--navy); }
+  h2 { color:var(--navy); margin:1.25rem 0 .5rem; font-size:1.1rem; }
+  .note { background:#fff5f5; border:1px solid #feb2b2; border-radius:12px; padding:.75rem .9rem; margin-bottom:1rem; font-size:.92rem; }
+  .ok { background:#f0fff4; border:1px solid #9ae6b4; border-radius:12px; padding:.75rem .9rem; margin-bottom:1rem; font-size:.92rem; }
+  .scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; border-radius:12px; border:1px solid var(--line); background:#fff; }
+  table { border-collapse:collapse; width:100%; min-width:760px; font-size:.76rem; }
+  th, td { border:1px solid var(--line); padding:.38rem .32rem; vertical-align:top; }
+  th { background:#edf2f7; color:var(--navy); }
+  th:first-child, td:first-child { position:sticky; left:0; background:#f7fafc; z-index:1; min-width:6.2rem; font-weight:600; }
+  .tiny { color:#718096; font-size:.68rem; font-weight:400; display:block; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Beijing-week timetable | 27 Jul - 1 Aug</h1>
+  <p>From Mum koenie.xlsx. Yellow = focus this week. <a href="./">&lt;- Dad pack home</a></p>
+</header>
+<div class="wrap">
+  <div class="note">
+    <b>Do not cancel:</b> school, CCA, soccer, FTR, piano, swimming, Miracle, tuition, Saturday family / JB.
+  </div>
+  <div class="legend">
+    <span class="school">School / fixed</span>
+    <span class="sport">Sport / CCA / tuition / Miracle</span>
+    <span class="focus">Beijing academic focus</span>
+    <span class="relax">Dinner / relax</span>
+    <span class="keep">Homework / keep as written</span>
+  </div>
+
+  <div class="ok" id="five-ab">
+    <b>5A / 5B (Tue and Thu 4:30-5:30):</b>
+    Ask Koen to <b>read through his mini booklets 5A and 5B</b> (aloud is fine).
+    Not a new worksheet - just booklet reading. Dad sits with him / keeps him on task.
+  </div>
+  <div class="ok">
+    <b>Spelling 10 (Mon / Fri 3:30-4:30  /  Wed 4:30-5:30):</b>
+    Open <a href="spelling10.html">Spelling 10 worksheet</a> on iPad. He revises then writes from memory.
+  </div>
+
+  <h2>KOEN</h2>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9:00-11:00</td>
+          <td class="school" colspan="5">SCHOOL</td>
+          <td class="keep">Breakfast / get ready / hang out with family</td>
+          <td class="keep">JB</td>
+        </tr>
+        <tr>
+          <td>1:00-2:00</td>
+          <td class="keep">lunch</td>
+          <td class="sport">CCA</td>
+          <td class="keep">lunch</td>
+          <td class="keep">lunch</td>
+          <td class="keep">lunch</td>
+          <td class="keep">Pack tuition bag</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>2:00-3:00</td>
+          <td class="keep">homework</td>
+          <td class="sport">CCA</td>
+          <td class="keep">homework</td>
+          <td class="keep">homework</td>
+          <td class="keep">homework</td>
+          <td class="sport">tuition</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>3:00-3:30</td>
+          <td class="focus">S&amp;T</td>
+          <td class="keep">homework</td>
+          <td class="keep">eoy (science) <span class="tiny">optional light</span></td>
+          <td class="keep">eoy (compo) <span class="tiny">short only / skip rewrite</span></td>
+          <td class="focus">S&amp;T review</td>
+          <td class="sport">tuition</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>3:30-4:30</td>
+          <td class="keep">Spelling 10 <span class="tiny"><a href="spelling10.html">open worksheet</a></span></td>
+          <td class="keep">eoy (math) <span class="tiny">optional light</span></td>
+          <td class="keep">eoy (science) <span class="tiny">optional light</span></td>
+          <td class="keep">eoy (compo) <span class="tiny">short only</span></td>
+          <td class="keep">Spelling 10 <span class="tiny"><a href="spelling10.html">open worksheet</a></span></td>
+          <td class="sport">tuition</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>4:30-5:30</td>
+          <td class="focus">CL compo (battle card Drill A)</td>
+          <td class="keep">5A and 5B <span class="tiny">read mini booklets aloud</span></td>
+          <td class="keep">Spelling 10 <span class="tiny"><a href="spelling10.html">open worksheet</a></span></td>
+          <td class="keep">5A and 5B <span class="tiny">read mini booklets aloud</span></td>
+          <td class="focus">CL compo (battle card + recite)</td>
+          <td class="keep">tuition homework</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>5:30-6:30</td>
+          <td class="sport">Soccer</td>
+          <td class="focus">CL compo (battle card Drill B)</td>
+          <td class="focus">CL compo (battle card redo)</td>
+          <td class="focus">CL compo (recite only)</td>
+          <td class="sport">Soccer</td>
+          <td class="focus">CL revision (recite only)</td>
+          <td class="focus">If Sun 27: Battle A + S&amp;T Set 1</td>
+        </tr>
+        <tr>
+          <td>6:30-7:30</td>
+          <td class="sport">Soccer</td>
+          <td class="relax">dinner</td>
+          <td class="relax">dinner</td>
+          <td class="relax">dinner</td>
+          <td class="sport">Soccer</td>
+          <td class="relax">dinner</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>7:30-8:30</td>
+          <td class="relax">dinner</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">dinner</td>
+          <td class="relax">CG and relax</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>8:30-bed</td>
+          <td class="relax">television</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">television</td>
+          <td class="relax">relax</td>
+          <td class="keep"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>KEEFE</h2>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9:00-11:00</td>
+          <td class="school" colspan="5">SCHOOL</td>
+          <td class="sport">tuition</td>
+          <td class="keep">JB</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="school" colspan="5"></td>
+          <td class="keep">Hang out with family</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>1:00-1:30</td>
+          <td class="keep">dismiss</td>
+          <td class="keep">dismiss</td>
+          <td class="keep">dismiss</td>
+          <td class="keep">dismiss</td>
+          <td class="keep">dismiss</td>
+          <td class="keep">eoy (science) <span class="tiny">optional light</span></td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>1:30-2:30</td>
+          <td class="keep">lunch</td>
+          <td class="keep">lunch</td>
+          <td class="keep">lunch</td>
+          <td class="keep">lunch</td>
+          <td class="keep">lunch</td>
+          <td class="keep">eoy (science) <span class="tiny">optional</span></td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>2:30-3:00</td>
+          <td class="sport">FTR</td>
+          <td class="sport">piano</td>
+          <td class="sport">piano</td>
+          <td class="sport">piano</td>
+          <td class="sport">piano</td>
+          <td class="sport">piano</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>3:00-3:30</td>
+          <td class="sport">FTR</td>
+          <td class="sport">swimming</td>
+          <td class="sport">swimming</td>
+          <td class="sport">swimming</td>
+          <td class="sport">swimming</td>
+          <td class="sport">swimming</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>3:30-4:00</td>
+          <td class="sport">FTR</td>
+          <td class="keep">sch homework</td>
+          <td class="keep">sch homework</td>
+          <td class="keep">sch homework</td>
+          <td class="keep">sch homework</td>
+          <td class="keep">berries hmwork</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>4:00-4:30</td>
+          <td class="sport">FTR</td>
+          <td class="relax">TV and relax</td>
+          <td class="keep">sch homework</td>
+          <td class="keep">sch homework</td>
+          <td class="keep">sch homework</td>
+          <td class="keep">berries hmwork</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>4:30-5:00</td>
+          <td class="sport">FTR</td>
+          <td class="sport">miracle</td>
+          <td class="keep">eoy (english) <span class="tiny">ONE section max</span></td>
+          <td class="keep">eoy (chinese) <span class="tiny">light only</span></td>
+          <td class="keep">eoy (math) <span class="tiny">ONE section max</span></td>
+          <td class="keep">eoy (compo) <span class="tiny">optional light</span></td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>5:00-5:30</td>
+          <td class="sport">swimming</td>
+          <td class="sport">miracle</td>
+          <td class="keep">eoy (english)</td>
+          <td class="keep">eoy (chinese)</td>
+          <td class="keep">eoy (math)</td>
+          <td class="keep">eoy (compo)</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>5:30-6:00</td>
+          <td class="sport">piano</td>
+          <td class="sport">miracle</td>
+          <td class="keep">eoy (english)</td>
+          <td class="keep">eoy (chinese)</td>
+          <td class="sport">piano class</td>
+          <td class="relax">dinner</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>6:00-7:00</td>
+          <td class="relax">dinner</td>
+          <td class="sport">miracle</td>
+          <td class="relax">dinner</td>
+          <td class="relax">dinner</td>
+          <td class="sport">piano class</td>
+          <td class="relax">dinner / CG</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>7:00-7:30</td>
+          <td class="keep">ftr homework</td>
+          <td class="relax">dinner</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">TV and relax</td>
+          <td class="sport">piano class</td>
+          <td class="relax">CG</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>7:30-8:00</td>
+          <td class="keep">ftr homework</td>
+          <td class="relax">dinner</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">dinner</td>
+          <td class="relax">Rest</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>8:00-8:30</td>
+          <td class="keep">sch homework</td>
+          <td class="keep">mir homework</td>
+          <td class="focus">Oral practice (Eng Oral + CN voice note)</td>
+          <td class="focus">Oral practice (Eng Oral + CN voice note)</td>
+          <td class="relax">dinner</td>
+          <td class="relax">Rest</td>
+          <td class="keep"></td>
+        </tr>
+        <tr>
+          <td>8:30-9:00</td>
+          <td class="focus">Oral practice (Eng Oral + CN voice note)</td>
+          <td class="focus">Oral practice (Eng Oral + CN voice note)</td>
+          <td class="relax">TV and relax</td>
+          <td class="relax">TV and relax</td>
+          <td class="focus">Oral practice (Eng Oral + CN voice note)</td>
+          <td class="relax">Rest</td>
+          <td class="focus">If Sun 27: Oral Session 1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Quick map</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Koen</th><th>Keefe</th></tr></thead>
+      <tbody>
+        <tr><td>Sun 27 / Mon 28</td><td class="focus">CL compo Drill A + S&amp;T Set 1</td><td class="focus">Mon 8:30-9:00 Oral Session 1</td></tr>
+        <tr><td>Tue 29</td><td class="focus">CL compo Drill B + S&amp;T Set 2</td><td class="focus">8:30-9:00 Oral Session 2</td></tr>
+        <tr><td>Wed 30</td><td class="focus">CL compo redo + S&amp;T Set 3</td><td class="focus">8:00-8:30 Oral Session 3</td></tr>
+        <tr><td>Thu 31</td><td class="focus">CL compo recite</td><td class="focus">8:00-8:30 Oral Session 4</td></tr>
+        <tr><td>Fri 1 Aug</td><td class="focus">CL compo + recite + S&amp;T mistakes</td><td class="focus">8:30-9:00 Oral Session 5</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><a href="./">&lt;- Back to Dad pack home</a> | <a href="eng-oral/">English Oral</a> | <a href="cn-oral/">Chinese Oral</a> | <a href="spelling10.html">Spelling 10</a></p>
+</div>
+</body>
+</html>

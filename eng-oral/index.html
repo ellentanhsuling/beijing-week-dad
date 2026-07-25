@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keefe English Oral · Photo Practice</title>
+<style>
+  :root { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #1a202c; }
+  body { margin: 0; background: #f7fafc; }
+  header { background: #1a365d; color: #fff; padding: 1rem 1.25rem; }
+  header p { opacity: .92; margin: .4rem 0 0; font-size: .92rem; max-width: 52rem; }
+  #timer { position: sticky; top: 0; display: none; background: #c05621; color: #fff; padding: .45rem .9rem; z-index: 10; font-weight: 600; }
+  main { max-width: 820px; margin: 0 auto; padding: 1rem; }
+  nav { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0 1rem; }
+  nav a { background: #edf2f7; color: #1a365d; text-decoration: none; padding: .35rem .7rem; border-radius: 8px; font-size: .85rem; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1rem 1.1rem; margin: 1rem 0; }
+  .block { margin: .85rem 0; }
+  .meta, .tip { color: #4a5568; font-size: .9rem; }
+  .tip { color: #c05621; }
+  .passage { background: #fffff0; border-left: 3px solid #2b6cb0; padding: .7rem .85rem; border-radius: 0 8px 8px 0; }
+  img { width: 100%; border-radius: 8px; display: block; margin: .5rem 0; }
+  button { background: #2b6cb0; color: #fff; border: 0; border-radius: 8px; padding: .55rem .9rem; font-size: .9rem; cursor: pointer; }
+  details { background: #fefcbf; padding: .65rem .85rem; border-radius: 8px; margin-top: .6rem; }
+  h3 { margin: 0 0 .4rem; color: #2b6cb0; font-size: 1rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Keefe · English Oral Photo Practice</h1>
+  <p>2025+ format: Reading Aloud (given situation / PACT) + photograph SBC. Themes from reported PSLE 2024–2025 / prelim patterns. Answers use PEEL. Dad can run this on phone or iPad.</p>
+</header>
+<div id="timer"></div>
+<main>
+<nav>
+  <a href="#s1">1 Ice-cream</a>
+  <a href="#s2">2 Hawker</a>
+  <a href="#s3">3 Park</a>
+  <a href="#s4">4 Attendants</a>
+  <a href="#s5">5 Screen time</a>
+  <a href="../cn-oral/">Chinese oral HTML →</a>
+</nav>
+
+<section class="card" id="s1">
+  <h2>Session 1 · Reported PSLE English 2025 Day 1</h2>
+  <p class="meta">Ice-cream stall/cart with long queue (reported). Not an official SEAB paper.</p>
+
+  <div class="block">
+    <h3>1. Reading Aloud (different theme on purpose)</h3>
+    <p><b>Given situation:</b> You are reading this short news report aloud to your classmates during morning assembly.</p>
+    <p class="tip">P: inform · A: classmates · C: morning assembly · T: clear, serious but positive</p>
+    <p class="passage">Our Neighbourhood Watch organised a clean-up last Saturday. Volunteers swept the void deck and cleared litter near the playground. A Primary Six pupil said she felt proud when the area looked tidy again. Teachers reminded everyone that looking after common spaces is everyone&#x27;s job. Small actions, done together, can make our estate a nicer place to live.</p>
+    <button type="button" onclick="startTimer(1, 'read', 60)">1-min reading timer</button>
+  </div>
+
+  <div class="block">
+    <h3>2. Stimulus-Based Conversation — photograph</h3>
+    <img src="assets/eng_psle_icecream.jpg" alt="SBC photo session 1">
+    <ol>
+      <li><b>Q1 (photo):</b> Is this a good place to sell ice cream? Why or why not?</li>
+      <li><b>Q2 (experience):</b> Would you be willing to join a long queue for something you wanted? Why or why not?</li>
+      <li><b>Q3 (opinion):</b> Do you think people in Singapore are orderly? Why or why not?</li>
+    </ol>
+    <button type="button" onclick="startTimer(1, 'sbc', 180)">3-min SBC timer (PEEL)</button>
+    <p class="tip">Dad prompt if too short: “Can you say more using PEEL — Point, Elaborate, Example, Link?”</p>
+  </div>
+
+  <details>
+    <summary>Dad PEEL answer key (hide from Keefe)</summary>
+    <p><b>Q1:</b> Yes, I think this is a good place to sell ice cream. There is a long queue, which shows many people want to buy it, and a mall entrance means many shoppers pass by. For example, families with children often stop for a treat after shopping. So the location looks busy and suitable for sales.</p>
+    <p><b>Q2:</b> It depends on how much I want it and how long the wait is. If it is something special, I might wait 15 to 20 minutes. Once I queued for a limited snack at a fair and felt it was worth it. But if the queue is very long, I would come back later or choose something else.</p>
+    <p><b>Q3:</b> Generally yes — people in Singapore usually queue and follow rules in public. I can see in this photo that the customers are waiting in line rather than pushing. In MRT stations people also tend to let others alight first. Of course not everyone is perfect, but overall I think Singaporeans are quite orderly.</p>
+  </details>
+</section>
+
+<section class="card" id="s2">
+  <h2>Session 2 · Reported PSLE English 2025 Day 2</h2>
+  <p class="meta">Busy hawker centre (reported).</p>
+
+  <div class="block">
+    <h3>1. Reading Aloud (different theme on purpose)</h3>
+    <p><b>Given situation:</b> You are reading this blog post aloud to friends who want tips on managing school stress.</p>
+    <p class="tip">P: advise · A: friends · C: informal sharing · T: friendly, calm, practical</p>
+    <p class="passage">When tests pile up, many pupils feel tense and tired. Taking short breaks can help more than staring at notes for hours. A walk, a glass of water, or five minutes of stretching often clears the mind. Healthy habits are not about being perfect every day. They are about recovering well so we can try again.</p>
+    <button type="button" onclick="startTimer(2, 'read', 60)">1-min reading timer</button>
+  </div>
+
+  <div class="block">
+    <h3>2. Stimulus-Based Conversation — photograph</h3>
+    <img src="assets/eng_psle_hawker.jpg" alt="SBC photo session 2">
+    <ol>
+      <li><b>Q1 (photo):</b> Why do you think the people chose to eat at this hawker centre?</li>
+      <li><b>Q2 (experience):</b> Do you prefer to eat home-cooked food or buy food from outside? Why?</li>
+      <li><b>Q3 (opinion):</b> Do you think children should learn how to cook? Why or why not?</li>
+    </ol>
+    <button type="button" onclick="startTimer(2, 'sbc', 180)">3-min SBC timer (PEEL)</button>
+    <p class="tip">Dad prompt if too short: “Can you say more using PEEL — Point, Elaborate, Example, Link?”</p>
+  </div>
+
+  <details>
+    <summary>Dad PEEL answer key (hide from Keefe)</summary>
+    <p><b>Q1:</b> I think they chose this hawker centre because it is convenient and has many food choices. The tables look full, so the food is probably popular and affordable. For example, workers and families often eat there during lunch. So it seems like a practical place for a quick meal.</p>
+    <p><b>Q2:</b> I prefer home-cooked food most days because it is usually healthier and I can eat with my family. Outside food is useful when we are busy or want something special. For example, we sometimes buy chicken rice on weekends. So my preference is home-cooked, with outside food as a treat.</p>
+    <p><b>Q3:</b> Yes, I think children should learn basic cooking. It is a useful life skill and helps us eat more healthily. For example, learning to cook eggs or noodles means I can help at home. Therefore schools or parents should teach simple cooking, even if not every child becomes a chef.</p>
+  </details>
+</section>
+
+<section class="card" id="s3">
+  <h2>Session 3 · Reported PSLE English 2024 Day 1</h2>
+  <p class="meta">New park / outdoors / public behaviour (reported).</p>
+
+  <div class="block">
+    <h3>1. Reading Aloud (different theme on purpose)</h3>
+    <p><b>Given situation:</b> You are reading this announcement to encourage classmates to join a school reading challenge.</p>
+    <p class="tip">P: persuade · A: classmates · C: classroom announcement · T: enthusiastic, clear</p>
+    <p class="passage">This month, our school launches a two-week reading challenge. Pupils who finish three books can design a bookmark for the library display. Reading can take us to new places without leaving our chairs. Teachers hope more pupils will discover a book they love. Sign up at the library counter by Friday if you want to take part.</p>
+    <button type="button" onclick="startTimer(3, 'read', 60)">1-min reading timer</button>
+  </div>
+
+  <div class="block">
+    <h3>2. Stimulus-Based Conversation — photograph</h3>
+    <img src="assets/eng_psle_park.jpg" alt="SBC photo session 3">
+    <ol>
+      <li><b>Q1 (photo):</b> Would you be interested in visiting a park like the one in this photograph? Why?</li>
+      <li><b>Q2 (experience):</b> Do you like spending your free time outdoors? Tell me about it.</li>
+      <li><b>Q3 (opinion):</b> How should people behave in public spaces such as parks?</li>
+    </ol>
+    <button type="button" onclick="startTimer(3, 'sbc', 180)">3-min SBC timer (PEEL)</button>
+    <p class="tip">Dad prompt if too short: “Can you say more using PEEL — Point, Elaborate, Example, Link?”</p>
+  </div>
+
+  <details>
+    <summary>Dad PEEL answer key (hide from Keefe)</summary>
+    <p><b>Q1:</b> Yes, I would be interested because the park looks clean and has space to walk and play. I can see families and an exercise corner, so there is something for different ages. For example, I could jog or sit by the pond. So it looks like a pleasant place to visit.</p>
+    <p><b>Q2:</b> Yes, I like outdoor time when the weather is not too hot. I usually play soccer or walk around my estate after homework. Last week I felt more refreshed after playing outside than after gaming. That is why I try to go outdoors a few times a week.</p>
+    <p><b>Q3:</b> People should keep parks clean, be considerate, and follow safety rules. They should not litter or play music too loudly. For example, cyclists should slow down near children. If everyone is considerate, public spaces stay enjoyable for all.</p>
+  </details>
+</section>
+
+<section class="card" id="s4">
+  <h2>Session 4 · Reported PSLE English 2024 Day 2</h2>
+  <p class="meta">School attendants appreciation / elderly / gratitude (reported).</p>
+
+  <div class="block">
+    <h3>1. Reading Aloud (different theme on purpose)</h3>
+    <p><b>Given situation:</b> You are a tour guide welcoming overseas visitors who have just arrived in Singapore. Read in a warm, welcoming tone.</p>
+    <p class="tip">P: welcome / introduce · A: overseas visitors · C: tour start · T: warm, clear, friendly</p>
+    <p class="passage">Welcome to Singapore. Many visitors notice how green our city feels even though it is busy. Parks, park connectors, and shaded walkways help people move around comfortably. Hawker centres are another favourite stop because you can taste many dishes in one place. We hope you enjoy exploring and feel at home while you are here.</p>
+    <button type="button" onclick="startTimer(4, 'read', 60)">1-min reading timer</button>
+  </div>
+
+  <div class="block">
+    <h3>2. Stimulus-Based Conversation — photograph</h3>
+    <img src="assets/eng_psle_attendants.jpg" alt="SBC photo session 4">
+    <ol>
+      <li><b>Q1 (photo):</b> Do you think activities like this are meaningful? Why?</li>
+      <li><b>Q2 (experience):</b> Tell me about a time you helped an elderly person or showed appreciation to someone who helps at school.</li>
+      <li><b>Q3 (opinion):</b> Would you like to spend more time with the elderly? Why or why not?</li>
+    </ol>
+    <button type="button" onclick="startTimer(4, 'sbc', 180)">3-min SBC timer (PEEL)</button>
+    <p class="tip">Dad prompt if too short: “Can you say more using PEEL — Point, Elaborate, Example, Link?”</p>
+  </div>
+
+  <details>
+    <summary>Dad PEEL answer key (hide from Keefe)</summary>
+    <p><b>Q1:</b> Yes, I think these activities are meaningful because attendants work hard to keep the school safe and clean. Giving cards or flowers shows respect, not just taking their help for granted. For example, a simple thank you can make someone feel valued. So appreciation weeks are worth doing.</p>
+    <p><b>Q2:</b> Once I helped carry bags for an elderly neighbour at our void deck. She looked tired after shopping. I felt happy when she smiled and thanked me. At school I also say thank you to the cleaners when I see them. Small gestures matter.</p>
+    <p><b>Q3:</b> Yes, I would like to, because I can learn from their stories and they may feel less lonely. I enjoy talking to my grandparents about the past. For example, my grandmother teaches me simple recipes. Spending time with the elderly is good for both sides.</p>
+  </details>
+</section>
+
+<section class="card" id="s5">
+  <h2>Session 5 · Reported PSLE 2022 theme + 2025 prelim pattern</h2>
+  <p class="meta">Child on device during homework time (screen-time / responsibility).</p>
+
+  <div class="block">
+    <h3>1. Reading Aloud (different theme on purpose)</h3>
+    <p><b>Given situation:</b> You are reading this speech to motivate your CCA teammates before a competition.</p>
+    <p class="tip">P: motivate · A: teammates · C: before competition · T: energetic, encouraging</p>
+    <p class="passage">Winning feels exciting, but improving after mistakes matters just as much. Last season we lost because we rushed. Instead of blaming one another, we reviewed what went wrong and practised calmly. Courage is not only about finishing first. It is about standing up and trying again.</p>
+    <button type="button" onclick="startTimer(5, 'read', 60)">1-min reading timer</button>
+  </div>
+
+  <div class="block">
+    <h3>2. Stimulus-Based Conversation — photograph</h3>
+    <img src="assets/eng_psle_screentime.jpg" alt="SBC photo session 5">
+    <ol>
+      <li><b>Q1 (photo):</b> Should the child be playing a game at this time? Why or why not?</li>
+      <li><b>Q2 (experience):</b> Do you like using electronic devices for learning? Tell me about it.</li>
+      <li><b>Q3 (opinion):</b> What should students be careful about when using devices?</li>
+    </ol>
+    <button type="button" onclick="startTimer(5, 'sbc', 180)">3-min SBC timer (PEEL)</button>
+    <p class="tip">Dad prompt if too short: “Can you say more using PEEL — Point, Elaborate, Example, Link?”</p>
+  </div>
+
+  <details>
+    <summary>Dad PEEL answer key (hide from Keefe)</summary>
+    <p><b>Q1:</b> I do not think the child should be playing a game while homework is unfinished. The open books suggest work still needs to be done. Playing first can make it harder to concentrate later. A short break after finishing a section would be better.</p>
+    <p><b>Q2:</b> Yes, devices can help learning when used properly. I use them to check dictionary meanings or watch explanation videos. For example, a Maths video once helped me understand fractions. But I need limits so I do not get distracted by games.</p>
+    <p><b>Q3:</b> Students should manage time, protect their eyes, and avoid unsafe websites. They should finish important work before entertainment. For example, my family uses a homework-first rule. Being careful helps devices stay useful instead of harmful.</p>
+  </details>
+</section>
+
+</main>
+<script>
+let t = null;
+function startTimer(session, mode, seconds) {
+  const el = document.getElementById('timer');
+  el.style.display = 'block';
+  let left = seconds;
+  clearInterval(t);
+  const label = mode === 'read' ? 'Reading Aloud' : 'SBC (Q1 photo → Q2 experience → Q3 opinion)';
+  t = setInterval(() => {
+    const m = Math.floor(left / 60);
+    const s = String(left % 60).padStart(2, '0');
+    el.textContent = 'Session ' + session + ' · ' + label + ' · ' + m + ':' + s;
+    if (left-- <= 0) {
+      clearInterval(t);
+      el.textContent = 'Time up — Session ' + session + '. Tick PEEL length, then next question or stop.';
+    }
+  }, 1000);
+}
+</script>
+</body>
+</html>

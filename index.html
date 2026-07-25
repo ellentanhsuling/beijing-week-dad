@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Beijing Week">
+<title>Beijing Week · Dad Pack</title>
+<style>
+  :root {
+    --navy: #1a365d;
+    --blue: #2b6cb0;
+    --orange: #c05621;
+    --green: #276749;
+    --bg: #f7fafc;
+    --card: #ffffff;
+    --line: #e2e8f0;
+    --muted: #4a5568;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: #1a202c;
+    line-height: 1.45;
+  }
+  header {
+    background: linear-gradient(145deg, #1a365d, #2b6cb0);
+    color: #fff;
+    padding: 1.25rem 1.1rem 1.4rem;
+  }
+  header h1 { margin: 0; font-size: 1.45rem; }
+  header p { margin: .45rem 0 0; opacity: .92; font-size: .95rem; max-width: 40rem; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 1rem; }
+  .alert {
+    background: #fff5f5;
+    border: 1px solid #feb2b2;
+    color: #9b2c2c;
+    border-radius: 12px;
+    padding: .85rem 1rem;
+    margin: 1rem 0;
+  }
+  .deadlines {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: .6rem;
+    margin: 1rem 0 1.25rem;
+  }
+  .deadline {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: .7rem .8rem;
+  }
+  .deadline b { display: block; color: var(--orange); font-size: .85rem; }
+  .deadline span { font-size: .92rem; }
+  h2 { color: var(--navy); font-size: 1.1rem; margin: 1.4rem 0 .6rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: .75rem;
+  }
+  a.card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  }
+  a.card:active { transform: scale(.99); }
+  a.card .tag {
+    display: inline-block;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    padding: .2rem .45rem;
+    border-radius: 999px;
+    margin-bottom: .45rem;
+  }
+  .tag.koen { background: #ebf8ff; color: var(--blue); }
+  .tag.keefe { background: #f0fff4; color: var(--green); }
+  .tag.both { background: #fefcbf; color: var(--orange); }
+  a.card h3 { margin: 0 0 .25rem; font-size: 1.05rem; color: var(--navy); }
+  a.card p { margin: 0; color: var(--muted); font-size: .9rem; }
+  .night {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .night table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  .night th, .night td { padding: .65rem .7rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  .night th { background: #edf2f7; color: var(--navy); width: 28%; }
+  footer { color: var(--muted); font-size: .8rem; padding: 1.5rem 0 2rem; }
+  .pdf-row { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
+  .pdf-row a {
+    background: #edf2f7;
+    color: var(--navy);
+    text-decoration: none;
+    padding: .45rem .7rem;
+    border-radius: 8px;
+    font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Beijing Week · Dad Pack</h1>
+  <p>Mum away 27 Jul – 1 Aug. Open on iPad/phone. Keep school, soccer, piano, swim, tuition as booked. Academic slots below only.</p>
+</header>
+<div class="wrap">
+  <div class="alert">
+    <b>Dad — you do not need to teach Chinese.</b>
+    English oral + timers + WhatsApp voice notes to Mum for Chinese oral. That is enough.
+  </div>
+
+  <div class="deadlines">
+    <div class="deadline"><b>3 Aug</b><span>Keefe Listening</span></div>
+    <div class="deadline"><b>5 Aug</b><span>Koen Chinese Compo</span></div>
+    <div class="deadline"><b>6 Aug</b><span>Koen Eng S&amp;T</span></div>
+    <div class="deadline"><b>12 Aug</b><span>Keefe PSLE Orals</span></div>
+  </div>
+
+  <h2>Open first</h2>
+  <div class="grid">
+    <a class="card" href="timetable.html">
+      <span class="tag both">Timetable</span>
+      <h3>Beijing-week timetable</h3>
+      <p>From Mum koenie.xlsx. Yellow cells = Beijing swaps. Spelling 10 + 5A/5B explained.</p>
+    </a>
+    <a class="card" href="pdfs/Dad_Run_Sheet.pdf">
+      <span class="tag both">1-pager</span>
+      <h3>Dad run sheet (PDF)</h3>
+      <p>Printable nightly plan and what to drop.</p>
+    </a>
+  </div>
+
+  <h2>Koen (25–40 min)</h2>
+  <div class="grid">
+    <a class="card" href="pdfs/Koen_Chinese_Battle_Card.pdf">
+      <span class="tag koen">Chinese</span>
+      <h3>Chinese look-picture battle card</h3>
+      <p>Use English helper script. He says skeleton aloud, then writes.</p>
+    </a>
+    <a class="card" href="pdfs/Koen_English_ST.pdf">
+      <span class="tag koen">English</span>
+      <h3>Synthesis &amp; Transformation</h3>
+      <p>3 sets + answer key at the back for Dad to mark.</p>
+    </a>
+      <a class="card" href="spelling10.html">
+      <span class="tag koen">Chinese</span>
+      <h3>Spelling 10 (听写十)</h3>
+      <p>Worksheet photo + Dad steps. Mon / Wed / Fri Spelling 10 slots.</p>
+    </a>
+    <a class="card" href="timetable.html#five-ab">
+      <span class="tag koen">Chinese</span>
+      <h3>5A / 5B mini booklets</h3>
+      <p>Ask Koen to read through mini booklets 5A and 5B (Tue / Thu slot).</p>
+    </a>
+  </div>
+
+  <h2>Keefe (25–40 min)</h2>
+  <div class="grid">
+    <a class="card" href="eng-oral/">
+      <span class="tag keefe">iPad</span>
+      <h3>English Oral (photos)</h3>
+      <p>5 sessions � PEEL � Dad answer keys hidden in each session.</p>
+    </a>
+    <a class="card" href="cn-oral/">
+      <span class="tag keefe">iPad</span>
+      <h3>Chinese Oral (video practice)</h3>
+      <p>Film-strip clips � PEEL � send Mum a WhatsApp voice note.</p>
+    </a>
+    <a class="card" href="pdfs/Keefe_English_Oral.pdf">
+      <span class="tag keefe">PDF</span>
+      <h3>English Oral printable</h3>
+      <p>Same sessions offline.</p>
+    </a>
+    <a class="card" href="pdfs/Keefe_Chinese_Oral.pdf">
+      <span class="tag keefe">PDF</span>
+      <h3>Chinese Oral printable</h3>
+      <p>Same sessions offline + English gist for Dad.</p>
+    </a>
+  </div>
+
+  <h2>Nightly checklist (from Mum koenie.xlsx)</h2>
+  <div class="night">
+    <table>
+      <tr><th>Sun 27 / Mon 28</th><td><b>Koen:</b> CL compo (battle card Drill A) · S&amp;T Set 1<br><b>Keefe:</b> Mon <b>8:30–9:00</b> Oral Session 1 (Eng + CN voice note)</td></tr>
+      <tr><th>Tue 29</th><td><b>Koen:</b> CL compo (battle card Drill B) · S&amp;T Set 2<br><b>Keefe:</b> <b>8:30–9:00</b> Oral Session 2</td></tr>
+      <tr><th>Wed 30</th><td><b>Koen:</b> CL compo (battle card redo) · S&amp;T Set 3<br><b>Keefe:</b> <b>8:00–8:30</b> Oral Session 3</td></tr>
+      <tr><th>Thu 31</th><td><b>Koen:</b> CL compo (recite only)<br><b>Keefe:</b> <b>8:00–8:30</b> Oral Session 4</td></tr>
+      <tr><th>Fri 1 Aug</th><td><b>Koen:</b> CL compo (battle card + recite) · S&amp;T mistakes<br><b>Keefe:</b> <b>8:30–9:00</b> Oral Session 5</td></tr>
+      <tr><th>Sat 2 Aug</th><td>Mum back. No new full essays. Keefe listening warm-up if needed. Koen recite only. Family hangout stays.</td></tr>
+    </table>
+  </div>
+
+  <div class="pdf-row">
+    <a href="pdfs/Dad_Run_Sheet.pdf">Dad run sheet</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="spelling10.html">Spelling 10</a>
+    <a href="eng-oral/">Eng oral</a>
+    <a href="cn-oral/">CN oral</a>
+  </div>
+
+  <footer>
+    Chinese marking: Mum replies to voice notes with 1 praise + 1 fix max.<br>
+    Drop while Mum away: full EOY papers every night, rewriting whole Chinese essays, Dad marking Chinese pronunciation.
+  </footer>
+</div>
+</body>
+</html>
